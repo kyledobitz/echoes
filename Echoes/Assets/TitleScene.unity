@@ -83,7 +83,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 240897898}
   - 131: {fileID: 240897897}
-  - 114: {fileID: 240897899}
   m_Layer: 0
   m_Name: TitleSceneImage
   m_TagString: Untagged
@@ -121,20 +120,6 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &240897899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 240897896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74ad0eb8838aabb4f9f9038d2256c151, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customTexture: {fileID: 0}
-  nextScene: Area1Scene
-  delayTime: 2
 --- !u!1 &1394496222
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,6 +182,7 @@ GameObject:
   - 92: {fileID: 1587175675}
   - 124: {fileID: 1587175674}
   - 81: {fileID: 1587175673}
+  - 114: {fileID: 1587175678}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -265,3 +251,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1587175678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1587175672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ad0eb8838aabb4f9f9038d2256c151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customTexture: {fileID: 240897897}
+  nextScene: HubRoom
+  delayTime: 2

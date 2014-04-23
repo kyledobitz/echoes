@@ -3,22 +3,16 @@ using System.Collections;
 
 public class RoomTransition : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		Debug.Log("Triggered Started!");
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public string nextScene = "Area1Scene";
+
+	void Update(){
+		transform.position += Vector3.zero;
 	}
 
-	void OnTriggerEnter(Collider collider){
-		Destroy(collider.gameObject);
-		Debug.Log("Triggered!");
+	void OnTriggerEnter2D(Collider2D collider){
+		Debug.Log("On Trigger Enter");
 		if(collider.gameObject.tag == "Player")
-			Debug.Log("player entering next level");
+			Application.LoadLevel (nextScene);
 
 	}
 }
